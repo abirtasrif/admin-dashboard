@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color-primary: #1e2be4;
+  --color-primary-variant: #0c207c;
+  --color-danger: #db3737;
+  --color-warning: #e0c73b;
+  --color-success: #3acec6;
+  --color-white: #fff;
+  --color-bg: #f1f1f1;
+  --color-info-dark: #5f6c8f;
+  --color-infor-light: #c6cadf;
+  --color-dark: #2c303d;
+  --color-dark-variant: #575b6d;
+  --color-light: rgba(153 168 158/0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-size: 0.8rem;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 14rem auto 23rem;
+  gap: 1.8rem;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 0.85rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+h5 {
+  font-size: 0.75rem;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.profile-photo {
+  width: 2.8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
