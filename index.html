@@ -1,61 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <aside>
+        <div class="logo">
+          <img src="./images/logo.png" alt="" class="logo-img" />
+          <h2>BLUE <span class="danger">SHOP</span></h2>
+        </div>
 
-        <aside>
-            <div class="logo">
-                <img src="./images/logo.png" alt="">
-                <h2>BLUE <span class="danger"></span> SHOP</h2>
+        <div class="sidebar">
+          <a href="#">
+            <span><i class="uil uil-window"></i></span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-user"></i></span>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-package"></i></i></span>
+            <h3>Orders</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-arrow-growth"></i></span>
+            <h3>Analytics</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-parcel"></i></span>
+            <h3>Products</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-file-graph"></i></span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-setting"></i></span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-plus"></i></span>
+            <h3>Add Products</h3>
+          </a>
+          <a href="#">
+            <span><i class="uil uil-sign-out-alt"></i></span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+
+      <div class="center">
+        <div class="dashboard">
+            <div class="db-nav">
+                <h1>Dashboard</h1>
+                <div class="admin-profile">
+                    <div class="welcome-note">
+                        <p>Hello, <span>Abir</span> </p>
+                        <p>admin</p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="https://i.ibb.co/qrT17PD/79617b27-4d24-4f1a-a847-135c91db8457.jpg" alt="">
+                    </div>
+                    
+
+                </div>
             </div>
+            
+            <div class="cards">
+                <div class="card-sale">
+                    <div class="card-left">
+                        <i class="uil uil-arrow-growth"></i>
+                        <h4>Total Sales</h4>
+                        <h3>$32,249</h3>
+                        <p class="muted">Last 24 hours</p>
+                    </div>
+                    <div class="card-right">
+                        <p class="percentage">87%</p>
+                        <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M72.1733 11.7428C65.0485 5.04993 55.8344 1.01771 46.0836 0.325641C36.3329 -0.366424 26.6416 2.32398 18.643 7.94346C10.6443 13.5629 4.82738 21.768 2.17236 31.1758C-0.482656 40.5836 0.186579 50.6191 4.06729 59.5911C7.948 68.5631 14.8029 75.9231 23.4769 80.4307C32.1509 84.9384 42.1136 86.3181 51.6861 84.3374C61.2586 82.3568 69.8558 77.1368 76.0287 69.5571C82.2017 61.9775 85.5731 52.5015 85.5747 42.7262L43.0747 42.719L72.1733 11.7428Z" fill="#1E2BE4"/>
+</svg>
+                    </div>
+                </div>
+                <div class="card-expense">
+                    <div class="card-left">
+                        <i class="uil uil-arrow-growth"></i>
+                        <h4>Total Sales</h4>
+                        <h3>$32,249</h3>
+                        <p class="muted">Last 24 hours</p>
+                    </div>
+                    <div class="card-right">
+                        <p class="percentage">67%</p>
+                        <svg width="86" height="81" viewBox="0 0 86 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.0486 0.824223C15.5123 4.49813 10.0644 9.83587 6.25762 16.2957C2.45088 22.7555 0.420894 30.1075 0.373702 37.6054C0.326511 45.1033 2.26379 52.4802 5.98892 58.9874C9.71404 65.4947 15.0944 70.9005 21.5839 74.6564C28.0735 78.4123 35.4411 80.3845 42.9392 80.3728C50.4372 80.3611 57.7987 78.366 64.2765 74.5898C70.7542 70.8137 76.1177 65.3911 79.8225 58.8722C83.5273 52.3534 85.4416 44.9705 85.371 37.4728L42.8729 37.8729L22.0486 0.824223Z" fill="#1E2BE4"/>
+</svg>
 
-            <div class="sidebar">
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Customers</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Orders</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Analytics</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Reports</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Settings</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-window"></i></span>
-                    <h3>Add Products</h3>
-                </a>
-                <a href="#">
-                    <span><i class="uil uil-sign-out-alt"></i></span>
-                    <h3>Log Out</h3>
-                </a>
+                    </div>
+                </div>
+                <div class="card-income">
+                    <div class="card-left">
+                        <i class="uil uil-arrow-growth"></i>
+                        <h4>Total Sales</h4>
+                        <h3>$32,249</h3>
+                        <p class="muted">Last 24 hours</p>
+                    </div>
+                    <div class="card-right">
+                        <p class="percentage">72%</p>
+                        <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34.6306 0.552248C26.7307 2.17514 19.4557 6.01228 13.6552 11.6155C7.85466 17.2187 3.76817 24.3567 1.87299 32.1957C-0.0221812 40.0348 0.3522 48.2512 2.95241 55.8854C5.55262 63.5196 10.2713 70.2564 16.5573 75.3089C22.8434 80.3614 30.4373 83.521 38.452 84.4187C46.4667 85.3165 54.5715 83.9153 61.8196 80.3787C69.0677 76.8422 75.1599 71.3164 79.3847 64.4467C83.6095 57.577 85.7925 49.647 85.6786 41.5829L43.1829 42.1829L34.6306 0.552248Z" fill="#1E2BE4"/>
+</svg>
+                    </div>
+                </div>
             </div>
-
-        </aside>
+            <h2>Recent Orders</h2>
+            <div class="orders-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product ID</th>
+                            <th>Product Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CANON </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

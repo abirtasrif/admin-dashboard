@@ -9,7 +9,7 @@
   --color-white: #fff;
   --color-bg: #f1f1f1;
   --color-info-dark: #5f6c8f;
-  --color-infor-light: #c6cadf;
+  --color-info-light: #c6cadf;
   --color-dark: #2c303d;
   --color-dark-variant: #575b6d;
   --color-light: rgba(153 168 158/0.18);
@@ -43,8 +43,28 @@ body {
   gap: 1.8rem;
 }
 
+.danger {
+  color: var(--color-danger);
+}
 a {
   color: var(--color-dark);
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -0.5rem;
+  top: -0.5rem;
+}
+.logo-img {
+  width: 5rem;
+}
+.logo h2 {
+  font-size: 1.6rem;
 }
 
 img {
@@ -52,12 +72,38 @@ img {
   width: 100%;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+}
+
+.sidebar a:last-child {
+  position: absolute;
+  bottom: 1.3rem;
+}
+
+.sidebar a {
+  border-left: 5px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  border-left: 5px solid var(--color-primary);
+}
+
+.sidebar a span {
+  margin-left: 1rem;
+}
+
 h1 {
   font-weight: 800;
   font-size: 1.8rem;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 h3 {
   font-size: 0.85rem;
@@ -78,4 +124,68 @@ small {
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* ================CENTER=================== */
+.db-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-profile {
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile:last-child {
+  position: absolute;
+  right: 1rem;
+}
+
+.admin-profile p span {
+  font-weight: 600;
+}
+
+.welcome-note {
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.center .dashboard {
+  margin-top: 0.5rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-sale,
+.card-expense,
+.card-income {
+  width: 17rem;
+  height: 12rem;
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-left i {
+  margin: 2.2rem 0 0 0;
+}
+.card-left h4 {
+  margin: 2rem 0 0.4rem 0;
+}
+
+.card-left h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.card-left p {
+  margin-top: 2rem;
+}
+.card-left .muted {
+  color: var(--color-info-light);
 }
