@@ -46,6 +46,15 @@ body {
 .danger {
   color: var(--color-danger);
 }
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
 a {
   color: var(--color-dark);
   display: flex;
@@ -60,9 +69,11 @@ a {
   left: -0.5rem;
   top: -0.5rem;
 }
+
 .logo-img {
   width: 5rem;
 }
+
 .logo h2 {
   font-size: 1.6rem;
 }
@@ -107,15 +118,19 @@ h1 {
   font-weight: 800;
   font-size: 1.8rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 0.85rem;
 }
+
 h4 {
   font-size: 0.8rem;
 }
+
 h5 {
   font-size: 0.75rem;
 }
@@ -137,6 +152,7 @@ small {
   justify-content: space-between;
   margin-bottom: 1.1rem;
 }
+
 .admin-profile {
   display: flex;
   align-items: center;
@@ -159,6 +175,7 @@ small {
 .center .dashboard {
   margin-top: 0.5rem;
 }
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -176,12 +193,13 @@ small {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  box-shadow: 5px 5px 10px var(--color-light);
+  box-shadow: 5px 5px 10px var(--color-info-light);
 }
 
 .card-left i {
   margin: 2.2rem 0 0 0;
 }
+
 .card-left h4 {
   margin: 2rem 0 0.4rem 0;
 }
@@ -194,9 +212,7 @@ small {
 .card-left p {
   margin-top: 2rem;
 }
-.card-left .muted {
-  color: var(--color-info-light);
-}
+
 
 .card-right .percentage {
   position: absolute;
@@ -217,7 +233,7 @@ small {
 .orders-table {
   background-color: var(--color-white);
   border-radius: 1.5rem;
-  box-shadow: 5px 5px 10px var(--color-light);
+  box-shadow: 5px 5px 10px var(--color-info-light);
 }
 
 table {
@@ -233,11 +249,13 @@ tr {
   border-bottom: 3px ridge var(--color-info-light);
   padding-bottom: 1rem;
 }
+
 th {
   padding: 0.8rem 2.5rem;
   margin: 0 1rem;
   border-bottom: 3px ridge var(--color-info-light);
 }
+
 td {
   padding: 0.3rem 2.5rem;
   margin: 0 1rem;
@@ -252,4 +270,63 @@ tr:last-of-type {
   position: absolute;
   right: 2rem;
   top: 4rem;
+  width: 14rem;
+}
+
+.update {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  padding: 0.5rem 0.5rem 0.1rem;
+  box-shadow: 3px 3px 5px var(--color-info-light);
+}
+
+.update .admin-profile {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-bottom: 0.8rem;
+  background-color: color;
+}
+
+
+
+.welcome-note p {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.muted {
+  color: var(--color-info-light);
+}
+
+.update .profile-photo {
+  width: 5rem;
+}
+
+.update .admin-profile:last-child {
+  position: static;
+}
+
+.card-status {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 5px var(--color-info-light);
+}
+
+.add-product {
+  color: var(--color-primary-variant);
+  border-radius: 1rem;
+  display: flex;
+  padding: 0.8rem;
+  border: 2px dashed var(--color-primary-variant);
+  justify-content: center;
+
+}
+
+.card-status h3 {
+  text-transform: uppercase;
 }
